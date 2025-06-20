@@ -1,0 +1,75 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom, #000066, #0000cc);
+    color: white;
+  }
+  
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(to right, #1a1a8f, #000);
+    padding: 10px 30px;
+  }
+  
+  .logo {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo img {
+    width: 60px;
+    height: 60px;
+    margin-right: 10px;
+  }
+  
+  .school-info h1 {
+    font-size: 18px;
+    margin: 0;
+  }
+  
+  .school-info p {
+    margin: 0;
+    font-size: 14px;
+  }
+  
+  .user-info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 16px;
+  }
+  
+  main {
+    padding: 30px;
+    text-align: center;
+  }
+  
+  .judul {
+    font-size: 24px;
+    margin-bottom: 30px;
+  }
+  
+  .jadwal-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .hari {
+    background-color: white;
+    color: black;
+    padding: 20px;
+    width: 150px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  }
+  
+  .hari h3 {
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+  }
+  

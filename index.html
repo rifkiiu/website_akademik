@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Login SMK Hang Tuah</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <div class="left-panel">
+      <img src="logoht.jpg" alt="Logo SMK Hang Tuah" class="logo" />
+      <h2>Selamat Datang</h2>
+      <h3>SMK HANG TUAH 1 JAKARTA</h3>
+    </div>
+    <div class="right-panel">
+      <h2>Login</h2>
+      <p>Silakan masuk dengan akun masing-masing</p>
+      <form id="loginForm">
+        <div class="input-group">
+          <span class="icon">📧</span>
+          <input type="email" id="email" placeholder="Email" required />
+        </div>
+        <div class="input-group">
+          <span class="icon">🔑</span>
+          <input type="password" id="password" placeholder="Password" required />
+        </div>
+        <div class="input-group">
+          <span class="icon">👤</span>
+          <select id="role" required>
+            <option value="" disabled selected>Role</option>
+            <option value="admin">Admin</option>
+            <option value="guru">Guru</option>
+            <option value="siswa">Siswa</option>
+          </select>
+        </div>
+        <div class="forgot">
+          <a href="#">Lupa Kata Sandi?</a>
+        </div>
+        <button type="submit" class="btn-masuk">Masuk</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- JavaScript Login Bebas -->
+  <script>
+    document.getElementById("loginForm").addEventListener("submit", function (e) {
+      e.preventDefault(); // Mencegah reload
+
+      const email = document.getElementById("email").value.trim();
+      const password = document.getElementById("password").value.trim();
+      const role = document.getElementById("role").value;
+
+      if (email && password && role) {
+        alert("Login berhasil!");
+        window.location.href = "menu.html"; // Arahkan ke halaman setelah login
+      } else {
+        alert("Harap isi semua data terlebih dahulu.");
+      }
+    });
+  </script>
+</body>
+</html>
